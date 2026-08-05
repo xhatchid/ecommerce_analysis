@@ -1,5 +1,0 @@
-data/olist.db
-data/raw/*.csv
-__pycache__/
-*.pyc
-.DS_Store
