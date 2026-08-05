@@ -18,7 +18,7 @@ Brazilian marketplaces.
 
 
 ## Key findings
-![Dashboard screenshot](docs/dashboard_screenshot.png)
+![Dashboard screenshot](docs/dashboard.png)
 - **Late deliveries tank satisfaction.** Orders delivered after the estimated
   date average a **2.55–2.57** review score, vs **4.21–4.29** for on-time
   orders — a statistically significant relationship (point-biserial
