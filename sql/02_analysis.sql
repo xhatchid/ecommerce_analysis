@@ -15,7 +15,7 @@ SELECT
     o.order_estimated_delivery_date,
     c.customer_state,
     p.product_category_name,
-    COALESCE(ct.product_category_name_english, p.product_category_name) AS category_english,
+    COALESCE(ct.product_category_name_english, p.product_category_name, 'uncategorized') AS category_english,
     r.review_score,
     CASE
         WHEN o.order_status = 'delivered'

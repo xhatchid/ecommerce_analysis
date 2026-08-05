@@ -10,36 +10,12 @@ Brazilian marketplaces.
 ## Tools used
 
 - **SQL (SQLite)** — schema design, table loading, and the core joins/aggregations
-  that answer the business question (`sql/`)
+  that answer the business question (`sql`)
 - **Python (pandas, scipy)** — statistical testing (correlation, t-test) and
-  clean CSV exports for reporting (`python/`)
+  clean CSV exports for reporting (`python`)
 - **Google Sheets** — final dashboard/visuals for a non-technical audience
-  (link: *add your published Sheets link here once built*)
+  (link: https://docs.google.com/spreadsheets/d/19xQQIomQe8O_7MpIAQalmQ0nV_1oybNxbFekBpe60ZI/edit?usp=sharing)
 
-## Project structure
-
-```
-olist-portfolio/
-├── data/
-│   ├── raw/              # source CSVs
-│   └── olist.db          # SQLite database (built by python/01_load_data.py)
-├── sql/
-│   ├── 01_schema.sql      # table definitions
-│   └── 02_analysis.sql    # views answering the business question
-├── python/
-│   ├── 01_load_data.py    # loads raw CSVs into SQLite
-│   └── 02_analysis.py     # runs stats + exports summary CSVs
-├── sheets_exports/         # CSVs ready to paste into Google Sheets
-└── README.md
-```
-
-## How to run it
-
-```bash
-pip install pandas scipy
-python python/01_load_data.py   # builds data/olist.db from the raw CSVs
-python python/02_analysis.py    # runs the SQL views + stats, exports CSVs
-```
 
 ## Key findings
 
@@ -58,6 +34,5 @@ python python/02_analysis.py    # runs the SQL views + stats, exports CSVs
 
 ## Next steps
 
-- Build the Google Sheets dashboard from `sheets_exports/`
 - Segment by seller (are specific sellers driving the regional lateness?)
 - Control for order value / freight distance as confounders
